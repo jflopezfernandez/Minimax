@@ -23,7 +23,7 @@ SRC_HEADERS   = -I include
 INCLUDE_DIRS  = $(SRC_HEADERS)
 
 LANG_STANDARD = -std=c11
-COMPILERWARN  = -Wall -Wextra -Wpedantic
+COMPILERWARN  = -Wall -Wextra -Wpedantic -Wno-format
 OPTIMIZATIONS = -m64 -Ofast -mtune=intel -march=skylake -mavx2 -funroll-loops
 
 BUILD_FLAGS   = $(LANG_STANDARD) $(COMPILERWARN) $(OPTIMIZATIONS)
